@@ -1,0 +1,100 @@
+body {
+    background: rgb(28, 34, 40);
+    padding: .5rem;
+}
+
+h1 {
+    color: #f1f11f;
+    font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    padding-left: 2rem;
+}
+
+input[type=text] {
+    width: 25rem;
+    padding: .5rem;
+    margin-left: 2rem;
+    height: 2rem;
+    background: none;
+    border: 2px solid rgb(86, 105, 124);
+    border-radius: 10px;
+    outline: none;
+    margin-top: 2rem;
+    transition: background ease .5s;
+    color: #f1f11f;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
+
+input[type=text]:hover {
+    background: rgb(86, 105, 124);
+    transition: background ease .5s;
+    color: #f1f11f;
+}
+
+input[type=text]:active,input[type=text]:focus {
+    background: rgb(86, 105, 124);
+    transition: background ease .5s;
+    color: #f1f11f;
+}
+
+input[type=submit] {
+    width: 26.25rem;
+    padding: .5rem;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    height: 3.25rem;
+    background: none;
+    border: 2px solid rgb(86, 105, 124);
+    border-radius: 10px;
+    color: #f1f11f;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    outline:none;
+    transition: background ease .5s, transform ease .5s;
+}
+
+input[type=submit]:hover {
+    background: rgb(86, 105, 124);
+    transition: background ease .5s, transform ease .5s;
+    color: #f1f11f;
+    transform: translate(0,-5px);
+}
+
+.data {
+    background: rgb(86, 105, 124);
+    border-radius: 8px;
+    color: #f1f11f;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 22.5rem;
+    margin-left: 2rem;
+    height: 5rem;
+    font-size: 1.25rem;
+    padding: 2rem;
+    margin-top: 2rem;
+
+}
+
+.data a {
+    color: #f1f11f;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.copyright {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: rgb(86, 105, 124);
+    font-size: 1.25rem;
+    text-decoration: none;
+    position: fixed;
+    bottom: 1rem;
+    left: 2rem;
+}
+
+.copyright a {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: rgb(86, 105, 124);
+    font-size: 1.25rem;
+}

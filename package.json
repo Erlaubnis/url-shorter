@@ -1,0 +1,21 @@
+{
+  "name": "url-shorter",
+  "version": "1.0.0",
+  "description": "URL Shortener for MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": ["url", "urlshortener", "short", "url tool", "mongo"],
+  "author": "Robin Klein",
+  "license": "MIT",
+  "homepage": "https://url.robin.software",
+  "repository": {"url": "https://github.com/Erlaubnis/url-shorter"},
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bson": "^4.0.4",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.9",
+    "nanoid": "^3.1.10"
+  }
+}
