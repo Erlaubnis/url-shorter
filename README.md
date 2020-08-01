@@ -6,7 +6,7 @@ With the App you can easily Shorten your URLs.
 # Getting started
 
 ## Step 1:
-`git clone https://github.com/Erlaubnis/url-shorter`
+`git clone https://github.com/dieserRobin/url-shorter`
 
 ## Step 2:
 Set your Mongo URL in app.js.
