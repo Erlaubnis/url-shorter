@@ -28,7 +28,8 @@ const showData = (data) => {
 };
 
 button.addEventListener('click', () => {
-    if(url.value && url.value.includes('https://') && !url.value.includes('script')) {
+    if(url.value && url.value.match(/^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)
+           (?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/)) {
         (async () => {
         const headers = new Headers();
         headers.append('Content-Type', 'application/json');
