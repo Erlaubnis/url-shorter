@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = process.env.port || 3000;
 const { nanoid } = require('nanoid');
 const MongoClient = require('mongodb').MongoClient;
 const BSON = require('bson');
@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 
 app.listen(port, () => {
- console.log("Server running on port "+port);
+ console.log(`Server running on port ${port}`);
 });
 
 app.get('/', (req,res) => { 
@@ -39,12 +39,13 @@ app.get('/:urlid', (req,res) => {
 
 app.post('/url', (req,res) => {
     let body = req.body;
-    if(!body['url']) { res.send('500'); return; }
+    if(!body['url']) { res.send('500'); return; } 
 
     MongoClient.connect(url, function(err, db) {
         if (err) throw err;
         var dbo = db.db("urlshortener");
-        var obj = { url: body['url'], short: nanoid(5) };
+        var src = body['src'];
+        var obj = { url: body['url'], short: nanoid(5), src: src || undefined };
 
         dbo.collection("urls").insertOne(obj, function(err, resp) {
             res.json(resp['ops'][0]);
