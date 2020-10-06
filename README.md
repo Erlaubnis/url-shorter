@@ -16,6 +16,11 @@ Set your Mongo URL in app.js.
 ## Step 3:
 `npm start`
 
+### Preview
+
+The Backend is currently in use in the URL Shortener [SMOOL](https://smool.xyz/).
+The Frontend of Smool, is built with React.
+
 # License
 This Project is licensed under the MIT License, read more in the [License](LICENSE) file.
 
